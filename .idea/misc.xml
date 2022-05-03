@@ -3,8 +3,19 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/mobile/MobileProject/app/src/main/res/drawable-anydpi/ic_action_menu.xml" value="0.106" />
+        <entry key="..\:/mobile/MobileProject/app/src/main/res/drawable-v24/ic_baseline_lock_24.xml" value="0.106" />
         <entry key="..\:/mobile/MobileProject/app/src/main/res/drawable-v24/ic_baseline_perm_identity_24.xml" value="0.106" />
+        <entry key="..\:/mobile/MobileProject/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.106" />
+        <entry key="..\:/mobile/MobileProject/app/src/main/res/drawable/ic_baseline_book_24.xml" value="0.106" />
+        <entry key="..\:/mobile/MobileProject/app/src/main/res/drawable/ic_baseline_lock_24.xml" value="0.106" />
+        <entry key="..\:/mobile/MobileProject/app/src/main/res/drawable/ic_baseline_perm_identity_24.xml" value="0.106" />
+        <entry key="..\:/mobile/MobileProject/app/src/main/res/drawable/ic_launcher_background.xml" value="0.106" />
+        <entry key="..\:/mobile/MobileProject/app/src/main/res/layout/activity_home.xml" value="0.16145833333333334" />
         <entry key="..\:/mobile/MobileProject/app/src/main/res/layout/activity_main.xml" value="0.17552083333333332" />
+        <entry key="..\:/mobile/MobileProject/app/src/main/res/layout/activity_register.xml" value="0.17552083333333332" />
+        <entry key="..\:/mobile/MobileProject/app/src/main/res/layout/layout_header_nav.xml" value="0.17552083333333332" />
+        <entry key="..\:/mobile/MobileProject/app/src/main/res/menu/menu_nav.xml" value="0.17552083333333332" />
       </map>
     </option>
   </component>

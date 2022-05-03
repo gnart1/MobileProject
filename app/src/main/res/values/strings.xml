@@ -1,3 +1,8 @@
 <resources>
     <string name="app_name">Mobile Project</string>
+
+    <string name="nav_sogiaodich">Sổ giao dịch</string>
+    <string name="nav_sono">Sổ nợ</string>
+    <string name="nav_thongke">Thống kê</string>
+    <string name="nav_tietkiem">Tiết kiệm</string>
 </resources>
