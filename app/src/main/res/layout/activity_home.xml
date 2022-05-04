@@ -22,12 +22,12 @@
                 android:background="#2196F3"
                 />
             <LinearLayout
+            android:id="@+id/content"
             android:layout_width="match_parent"
-            android:layout_height="match_parent">
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:text="content ghi ở đây"/>
+            android:layout_height="match_parent"
+                android:orientation="vertical"
+                >
+
             </LinearLayout>
         </LinearLayout>
         <com.google.android.material.navigation.NavigationView
@@ -38,6 +38,7 @@
             android:fitsSystemWindows="true"
             android:id="@+id/NavigationView"
             app:headerLayout="@layout/layout_header_nav"
+            app:menu="@menu/menu_nav"
             >
             <ListView
                 android:id="@+id/ListMenu"

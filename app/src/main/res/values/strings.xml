@@ -5,4 +5,7 @@
     <string name="nav_sono">Sổ nợ</string>
     <string name="nav_thongke">Thống kê</string>
     <string name="nav_tietkiem">Tiết kiệm</string>
+    <string name="nav_taikhoan">Tài khoản</string>
+    <string name="nav_thongtincanhan">Thông tin cá nhân</string>
+    <string name="nav_dangxuat">Đăng xuất</string>
 </resources>

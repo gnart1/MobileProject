@@ -53,7 +53,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@id/txtPassword"
-        android:layout_marginLeft="80dp"
+        android:layout_marginLeft="70dp"
         android:text="Đăng nhập" />
     <Button
         android:id="@+id/btnRegister"
