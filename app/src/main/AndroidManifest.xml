@@ -10,8 +10,12 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.MobileProject">
         <activity
-            android:name=".HomeActivity"
+            android:name=".sogiaodich.AddSoGiaoDichActivity"
             android:exported="false" />
+        <activity
+            android:name=".HomeActivity"
+            android:exported="false"
+            android:label="Quản lý chi tiêu" />
         <activity
             android:name=".RegisterActivity"
             android:exported="false" />

@@ -11,9 +11,11 @@ import androidx.fragment.app.FragmentTransaction;
 
 import android.content.Context;
 import android.content.DialogInterface;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.ImageButton;
 import android.widget.ListView;
 
 import com.google.android.material.navigation.NavigationView;
@@ -22,12 +24,14 @@ import com.hoanhtrang.mobileproject.fragment.sonoFragment;
 import com.hoanhtrang.mobileproject.fragment.thongkeFragment;
 import com.hoanhtrang.mobileproject.fragment.thongtincanhanFragment;
 import com.hoanhtrang.mobileproject.fragment.tietkiemFragment;
+import com.hoanhtrang.mobileproject.sogiaodich.AddSoGiaoDichActivity;
 
 public class HomeActivity extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener {
     Toolbar toolbar;
     DrawerLayout drawerLayout;
     NavigationView navigationView;
     ListView listView;
+    ImageButton btnAdd;
     public static final int FRAGMENT_SOGIAODICH = 0;
     public static final int FRAGMENT_SONO = 1;
     public static final int FRAGMENT_THONGKE = 2;
@@ -48,6 +52,15 @@ public class HomeActivity extends AppCompatActivity implements NavigationView.On
         //check
         replaceFragment(new sogiaodichFragment());
         navigationView.getMenu().findItem(R.id.nav_sogiaodich).setChecked(true);
+
+//        btnAdd.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View view) {
+//                Intent it = new Intent(HomeActivity.this, MainActivity.class);
+//                startActivity(it);
+//            }
+//        });
+
     }
 
     private void actionToolbar() {
@@ -67,6 +80,9 @@ public class HomeActivity extends AppCompatActivity implements NavigationView.On
         drawerLayout = (DrawerLayout) findViewById(R.id.DrawerLayout);
         navigationView = (NavigationView) findViewById(R.id.NavigationView);
         listView = (ListView) findViewById(R.id.ListMenu);
+
+        //nut add
+        btnAdd = (ImageButton) findViewById(R.id.btnAdd);
     }
 
     @Override

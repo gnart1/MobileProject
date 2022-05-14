@@ -1,5 +1,6 @@
 package com.hoanhtrang.mobileproject.fragment;
 
+import androidx.appcompat.app.AppCompatActivity;
 import android.content.Context;
 import android.os.Bundle;
 import android.view.LayoutInflater;
