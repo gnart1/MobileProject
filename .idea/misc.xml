@@ -3,6 +3,17 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/hoc_tap/mobile/MobileProject/app/src/main/res/layout/activity_add_so_giao_dich.xml" value="0.18478260869565216" />
+        <entry key="..\:/hoc_tap/mobile/MobileProject/app/src/main/res/layout/activity_home.xml" value="0.16799999999999998" />
+        <entry key="..\:/hoc_tap/mobile/MobileProject/app/src/main/res/layout/activity_main.xml" value="0.18478260869565216" />
+        <entry key="..\:/hoc_tap/mobile/MobileProject/app/src/main/res/layout/activity_register.xml" value="0.18478260869565216" />
+        <entry key="..\:/hoc_tap/mobile/MobileProject/app/src/main/res/layout/fragment_sogiaodich.xml" value="0.18478260869565216" />
+        <entry key="..\:/hoc_tap/mobile/MobileProject/app/src/main/res/layout/fragment_sono.xml" value="0.18478260869565216" />
+        <entry key="..\:/hoc_tap/mobile/MobileProject/app/src/main/res/layout/fragment_thongke.xml" value="0.18478260869565216" />
+        <entry key="..\:/hoc_tap/mobile/MobileProject/app/src/main/res/layout/fragment_thongtincanhan.xml" value="0.18478260869565216" />
+        <entry key="..\:/hoc_tap/mobile/MobileProject/app/src/main/res/layout/fragment_tietkiem.xml" value="0.18478260869565216" />
+        <entry key="..\:/hoc_tap/mobile/MobileProject/app/src/main/res/layout/layout_header_nav.xml" value="0.18478260869565216" />
+        <entry key="..\:/hoc_tap/mobile/MobileProject/app/src/main/res/menu/menu_nav.xml" value="0.25416666666666665" />
         <entry key="..\:/mobile/MobileProject/app/src/main/res/drawable-anydpi/ic_action_menu.xml" value="0.106" />
         <entry key="..\:/mobile/MobileProject/app/src/main/res/drawable-v24/ic_baseline_lock_24.xml" value="0.106" />
         <entry key="..\:/mobile/MobileProject/app/src/main/res/drawable-v24/ic_baseline_perm_identity_24.xml" value="0.106" />
