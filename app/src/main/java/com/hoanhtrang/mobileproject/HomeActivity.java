@@ -32,13 +32,12 @@ public class HomeActivity extends AppCompatActivity implements NavigationView.On
     NavigationView navigationView;
     ListView listView;
     ImageButton btnAdd;
-    public static final int FRAGMENT_SOGIAODICH = 0;
-    public static final int FRAGMENT_SONO = 1;
+    public static final int FRAGMENT_NHAPTHU = 0;
+    public static final int FRAGMENT_NHAPCHI = 1;
     public static final int FRAGMENT_THONGKE = 2;
-    public static final int FRAGMENT_TIETKIEM = 3;
     public static final int FRAGMENT_THONGTINCANHAN = 4;
     Context context;
-    private int currentFragment = FRAGMENT_SOGIAODICH;
+    private int currentFragment = FRAGMENT_NHAPTHU;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -89,24 +88,19 @@ public class HomeActivity extends AppCompatActivity implements NavigationView.On
     public boolean onNavigationItemSelected(@NonNull MenuItem item) {
         int id = item.getItemId();
         if (id == R.id.nav_sogiaodich){
-            if(currentFragment != FRAGMENT_SOGIAODICH){
+            if(currentFragment != FRAGMENT_NHAPTHU){
                 replaceFragment(new sogiaodichFragment());
-                currentFragment = FRAGMENT_SOGIAODICH;
+                currentFragment = FRAGMENT_NHAPTHU;
             }
         }else if(id == R.id.nav_sono){
-            if(currentFragment != FRAGMENT_SONO){
+            if(currentFragment != FRAGMENT_NHAPCHI){
                 replaceFragment(new sonoFragment());
-                currentFragment = FRAGMENT_SONO;
+                currentFragment = FRAGMENT_NHAPCHI;
             }
         }else if(id == R.id.nav_thongke){
             if(currentFragment != FRAGMENT_THONGKE){
                 replaceFragment(new thongkeFragment());
                 currentFragment = FRAGMENT_THONGKE;
-            }
-        }else if(id == R.id.nav_tietkiem){
-            if(currentFragment != FRAGMENT_TIETKIEM){
-                replaceFragment(new tietkiemFragment());
-                currentFragment = FRAGMENT_TIETKIEM;
             }
         }else if(id == R.id.nav_thongtincanhan){
             if(currentFragment != FRAGMENT_THONGTINCANHAN){
