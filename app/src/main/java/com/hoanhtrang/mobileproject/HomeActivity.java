@@ -78,7 +78,7 @@ public class HomeActivity extends AppCompatActivity implements NavigationView.On
         listView = (ListView) findViewById(R.id.ListMenu);
 
         //nut add
-        btnAdd = (ImageButton) findViewById(R.id.btnAdd);
+//        btnAdd = (ImageButton) findViewById(R.id.btnAdd);
     }
 
     @Override
