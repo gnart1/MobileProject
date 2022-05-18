@@ -1,14 +1,53 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:background="#CDDC39">
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="thong ke"
-        android:textColor="@color/white"
-        android:textSize="30dp"/>
+    >
 
-</LinearLayout>
+
+    <Button
+        android:id="@+id/btnDate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="CHỌN NGÀY"/>
+    <TextView
+        android:id="@+id/lblDateTime"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="nhập ngày"/>
+
+    <TextView
+        android:id="@+id/ChiTieu"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtNhapNgay"
+        android:padding="5dp"
+        android:text="Chi tiêu:"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/ThuNhap"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtNhapNgay"
+        android:layout_alignParentRight="true"
+        android:padding="5dp"
+        android:text="Thu nhập:"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/ThuChi"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ChiTieu"
+        android:padding="10dp"
+        android:text="Thu chi:"
+        android:textSize="20sp" />
+    <ListView
+        android:id="@+id/lstThongKe"
+        android:layout_below="@+id/ThuChi"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+</RelativeLayout>

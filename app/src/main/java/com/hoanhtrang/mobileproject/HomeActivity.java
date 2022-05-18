@@ -1,6 +1,7 @@
 package com.hoanhtrang.mobileproject;
 
 import androidx.annotation.NonNull;
+import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
 import androidx.core.view.GravityCompat;
@@ -9,6 +10,8 @@ import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentTransaction;
 
 import android.content.Context;
+import android.content.DialogInterface;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.MenuItem;
 import android.view.View;
@@ -81,6 +84,8 @@ public class HomeActivity extends AppCompatActivity implements NavigationView.On
     @Override
     public boolean onNavigationItemSelected(@NonNull MenuItem item) {
         int id = item.getItemId();
+
+
         if (id == R.id.nav_nhapthu){
             if(currentFragment != FRAGMENT_NHAPTHU){
                 replaceFragment(new nhapthuFragment());
@@ -102,27 +107,38 @@ public class HomeActivity extends AppCompatActivity implements NavigationView.On
                 currentFragment = FRAGMENT_THONGTINCANHAN;
             }
         }else if(id == R.id.nav_dangxuat){
+            showLogout();
 
-//            AlertDialog.Builder dialog = new AlertDialog.Builder(context);
-//            dialog.setTitle("Xác nhận");
-//            dialog.setMessage("Bạn có muốn đăng xuất ?");
-//            dialog.setPositiveButton("OK", new DialogInterface.OnClickListener() {
-//                @Override
-//                public void onClick(DialogInterface dialogInterface, int i) {
-//
-//                }
-//            });
-//            dialog.setNegativeButton("Cancel", new DialogInterface.OnClickListener() {
-//                @Override
-//                public void onClick(DialogInterface dialogInterface, int i) {
-//                    return;
-//                }
-//            });
-//            dialog.show();
-            finish();
+            return true;
+
         }
         drawerLayout.closeDrawer(GravityCompat.START);
         return true;
+    }
+
+    private void showLogout() {
+        AlertDialog.Builder dialog = new AlertDialog.Builder(HomeActivity.this);
+        dialog.setTitle("Xác nhận");
+        dialog.setMessage("Bạn có muốn đăng xuất ?");
+        dialog.setPositiveButton("OK", new DialogInterface.OnClickListener() {
+            @Override
+            public void onClick(DialogInterface dialogInterface, int i) {
+                logout();
+            }
+        });
+        dialog.setNegativeButton("Cancel", new DialogInterface.OnClickListener() {
+            @Override
+            public void onClick(DialogInterface dialogInterface, int i) {
+                return;
+            }
+        });
+        dialog.show();
+    }
+
+    private void logout() {
+        Intent it = new Intent(HomeActivity.this, MainActivity.class);
+        startActivity(it);
+        finish();
     }
 
     @Override
