@@ -28,7 +28,7 @@ public class nhapchiFragment extends Fragment {
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
         mView = inflater.inflate(R.layout.fragment_nhapchi, container, false);
-        editText = (EditText) mView.findViewById(R.id.date);
+//        editText = (EditText) mView.findViewById(R.id.date);
         DatePickerDialog.OnDateSetListener date = new DatePickerDialog.OnDateSetListener() {
             public void onDateSet(DatePicker view, int year, int month, int day) {
                 myCalendar.set(Calendar.YEAR, year);

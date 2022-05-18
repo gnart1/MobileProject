@@ -10,10 +10,11 @@ import java.sql.SQLException;
 
 public class ConnectionClass {
     public static String ip = "192.168.100.11";
+//    public static String port = "1434";
     String classs = "net.sourceforge.jtds.jdbc.Driver";
     public static String db = "financial_management";
-    public static String un = "";
-    public static String password = "";
+    public static String un = "sa";
+    public static String password = "123";
 
 
     @SuppressLint("NewApi")
