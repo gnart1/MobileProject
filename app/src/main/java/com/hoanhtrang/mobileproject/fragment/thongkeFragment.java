@@ -27,38 +27,38 @@ public class thongkeFragment extends Fragment {
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
         return inflater.inflate(R.layout.fragment_thongke, container, false);
     }
-    public class thongke extends AppCompatActivity {
-        DateFormat fmtDateAndTime = DateFormat.getDateTimeInstance();
-        TextView lblDateTime;
-        Calendar myCalendar = Calendar.getInstance();
-        DatePickerDialog.OnDateSetListener d = new DatePickerDialog.OnDateSetListener() {
-            @Override
-            public void onDateSet(DatePicker view, int year, int monthOfYear, int dayOfMonth) {
-                myCalendar.set(Calendar.YEAR, year);
-                myCalendar.set(Calendar.MONTH, monthOfYear);
-                myCalendar.set(Calendar.DAY_OF_MONTH, dayOfMonth);
-                updateLabel();
-            }
-        };
-
-        @Override
-        protected void onCreate(Bundle savedInstanceState) {
-            super.onCreate(savedInstanceState);
-            setContentView(R.layout.fragment_thongke);
-
-            lblDateTime = (TextView) findViewById(R.id.lblDateTime);
-            Button btnDate = (Button) findViewById(R.id.btnDate);
-            btnDate.setOnClickListener(new View.OnClickListener() {
-                @Override
-                public void onClick(View view) {
-                    new DatePickerDialog(HomeActivity.this, d, myCalendar.get(Calendar.YEAR), myCalendar.get(Calendar.MONTH), myCalendar.get(Calendar.DAY_OF_MONTH)).show();
-                }
-            });
-            updateLabel();
-        }
-
-        private void updateLabel() {
-            lblDateTime.setText(fmtDateAndTime.format(myCalendar.getTime()));
-        }
-    }
+//    public class thongke extends AppCompatActivity {
+//        DateFormat fmtDateAndTime = DateFormat.getDateTimeInstance();
+//        TextView lblDateTime;
+//        Calendar myCalendar = Calendar.getInstance();
+//        DatePickerDialog.OnDateSetListener d = new DatePickerDialog.OnDateSetListener() {
+//            @Override
+//            public void onDateSet(DatePicker view, int year, int monthOfYear, int dayOfMonth) {
+//                myCalendar.set(Calendar.YEAR, year);
+//                myCalendar.set(Calendar.MONTH, monthOfYear);
+//                myCalendar.set(Calendar.DAY_OF_MONTH, dayOfMonth);
+//                updateLabel();
+//            }
+//        };
+//
+//        @Override
+//        protected void onCreate(Bundle savedInstanceState) {
+//            super.onCreate(savedInstanceState);
+//            setContentView(R.layout.fragment_thongke);
+//
+//            lblDateTime = (TextView) findViewById(R.id.lblDateTime);
+//            Button btnDate = (Button) findViewById(R.id.btnDate);
+//            btnDate.setOnClickListener(new View.OnClickListener() {
+//                @Override
+//                public void onClick(View view) {
+//                    new DatePickerDialog(HomeActivity.this, d, myCalendar.get(Calendar.YEAR), myCalendar.get(Calendar.MONTH), myCalendar.get(Calendar.DAY_OF_MONTH)).show();
+//                }
+//            });
+//            updateLabel();
+//        }
+//
+//        private void updateLabel() {
+//            lblDateTime.setText(fmtDateAndTime.format(myCalendar.getTime()));
+//        }
+   // }
 }
