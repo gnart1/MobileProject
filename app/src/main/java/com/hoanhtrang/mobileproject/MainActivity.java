@@ -9,6 +9,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ProgressBar;
 import android.widget.Toast;
 
 import java.sql.CallableStatement;
@@ -24,6 +25,7 @@ public class MainActivity extends AppCompatActivity {
     public static ConnectionClass connectionClass;
     public static Connection con;
     EditText txtName, txtPassword;
+    ProgressBar progressBar;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -32,7 +34,9 @@ public class MainActivity extends AppCompatActivity {
         txtPassword = (EditText) findViewById(R.id.txtPassword);
         Button btnLogin = (Button) findViewById(R.id.btnLogin);
         Button btnRegister = (Button) findViewById(R.id.btnRegister);
-        //progressBar.setVisibility(View.VISIBLE);
+        progressBar = (ProgressBar) findViewById(R.id.progressBar);
+
+        progressBar.setVisibility(View.GONE);
         btnRegister.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -59,12 +63,11 @@ public class MainActivity extends AppCompatActivity {
         String z = "";
         Boolean isSuccess = false;
 
-//        @Override
-//        protected void onPreExecute(){
-//
-//            progressBar.setVisibility(View.VISIBLE);
-//        }
+        @Override
+        protected void onPreExecute(){
 
+            progressBar.setVisibility(View.VISIBLE);
+        }
         @Override
         protected String doInBackground(String... params) {
             connectionClass = new ConnectionClass();
@@ -75,7 +78,6 @@ public class MainActivity extends AppCompatActivity {
                 con = connectionClass.CONN();
                     if(con == null){
                        z = "Check connection";
-                        //Toast.makeText(MainActivity.this, "Chưa nhập thông tin", Toast.LENGTH_SHORT).show();
                     }else {
                         ResultSet rs;
                         CallableStatement stm = con.prepareCall("{call CheckUser(?,?)}");
@@ -84,8 +86,7 @@ public class MainActivity extends AppCompatActivity {
                         stm.executeQuery();
                         rs = stm.getResultSet();
 
-                        while(rs.next()){
-                            //Toast.makeText(MainActivity.this, "ok", Toast.LENGTH_SHORT).show();
+                        if(rs.next()){
                             z = "Đăng nhập thành công!";
                             isSuccess = true;
                             //con.close();
@@ -94,10 +95,6 @@ public class MainActivity extends AppCompatActivity {
                     startActivity(intent);
                     //finish();
                          }
-                        if (isSuccess = true)
-                        {
-
-                        }
                         else{
                             z = "Đăng nhập thất bại!";
                             isSuccess = false;
@@ -110,7 +107,15 @@ public class MainActivity extends AppCompatActivity {
         }
 
 
-            return null;
+            return z;
+        }
+        @Override
+        protected void onPostExecute(String r){
+            progressBar.setVisibility(View.GONE);
+            Toast.makeText(MainActivity.this, r, Toast.LENGTH_SHORT).show();
+            if (isSuccess){
+                Toast.makeText(MainActivity.this, "Đăng nhập thành công!", Toast.LENGTH_SHORT).show();
+            }
         }
     }
 }
