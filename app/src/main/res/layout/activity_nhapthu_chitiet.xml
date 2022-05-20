@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_weight="10"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/txtName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tên nhập thu"
+            android:textSize="22sp" />
+
+
+        <TextView
+            android:id="@+id/txtNgay"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:text="Ngày nhập"
+            android:textSize="22sp" />
+
+        <TextView
+            android:id="@+id/txtSoTien"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="150dp"
+            android:layout_marginTop="50dp"
+            android:text="Số tiền"
+            android:textSize="22sp" />
+
+
+        <ImageView
+            android:id="@+id/imgEdit"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_alignParentRight="true"
+            android:layout_weight="0.5"
+            android:src="@drawable/edit" />
+
+        <ImageView
+            android:id="@+id/imgDelete"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_below="@+id/imgEdit"
+            android:layout_alignParentRight="true"
+            android:layout_weight="0.5"
+            android:src="@drawable/delete" />
+    </RelativeLayout>
+
+</RelativeLayout>

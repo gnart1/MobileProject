@@ -87,7 +87,6 @@ public class MainActivity extends AppCompatActivity {
                         stm.executeQuery();
                         rs = stm.getResultSet();
 
-
                         if(rs.next()){
 
                             z = "Đăng nhập thành công!";

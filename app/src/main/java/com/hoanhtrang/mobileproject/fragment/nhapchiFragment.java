@@ -7,6 +7,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.DatePicker;
 import android.widget.EditText;
+import android.widget.ListView;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
@@ -14,13 +15,19 @@ import androidx.fragment.app.Fragment;
 
 import com.hoanhtrang.mobileproject.HomeActivity;
 import com.hoanhtrang.mobileproject.MainActivity;
+import com.hoanhtrang.mobileproject.NhapChi;
+import com.hoanhtrang.mobileproject.NhapChiAdapter;
 import com.hoanhtrang.mobileproject.R;
 
 import java.text.SimpleDateFormat;
+import java.util.ArrayList;
 import java.util.Calendar;
 import java.util.Locale;
 
 public class nhapchiFragment extends Fragment {
+    ListView lstNhapChi;
+    ArrayList<NhapChi> listNhapChi;
+    NhapChiAdapter adapter;
     private View mView;
     final Calendar myCalendar= Calendar.getInstance();
     EditText editText;
@@ -37,10 +44,15 @@ public class nhapchiFragment extends Fragment {
                 updateLabel();
             }
         };
+//        lstNhapChi = mView.findViewById(R.id.lstNhapChi);
+//        listNhapChi = new ArrayList<>();
+//        adapter = new NhapChiAdapter(getActivity(), R.layout.activity_nhapchi_chitiet, listNhapChi);
+//
+//        lstNhapChi.setAdapter(adapter);
 //        editText.setOnClickListener(new View.OnClickListener() {
 //            @Override
 //            public void onClick(View view) {
-//                new DatePickerDialog(nhapchiFragment, date, myCalendar.get(Calendar.YEAR), myCalendar.get(Calendar.MONTH), myCalendar.get(Calendar.DAY_OF_MONTH)).show();
+//                new DatePickerDialog(nhapchiFragment.this, date, myCalendar.get(Calendar.YEAR), myCalendar.get(Calendar.MONTH), myCalendar.get(Calendar.DAY_OF_MONTH)).show();
 //            }
 //        });
         return mView;

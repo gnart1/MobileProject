@@ -1,8 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.hoanhtrang.mobileproject">
+
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -10,6 +12,18 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.MobileProject">
+        <activity
+            android:name=".ListNhapThuActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ListNhapChiActivity"
+            android:exported="false" />
+        <activity
+            android:name=".NhapThuActivity"
+            android:exported="false" />
+        <activity
+            android:name=".NhapChiActivity"
+            android:exported="false" />
         <activity
             android:name=".sogiaodich.AddSoGiaoDichActivity"
             android:exported="false" />

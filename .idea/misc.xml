@@ -22,15 +22,25 @@
         <entry key="..\:/mobile/MobileProject/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.106" />
         <entry key="..\:/mobile/MobileProject/app/src/main/res/drawable/ic_baseline_add_circle_24.xml" value="0.115" />
         <entry key="..\:/mobile/MobileProject/app/src/main/res/drawable/ic_baseline_book_24.xml" value="0.106" />
+        <entry key="..\:/mobile/MobileProject/app/src/main/res/drawable/ic_baseline_border_color_24.xml" value="0.1825" />
+        <entry key="..\:/mobile/MobileProject/app/src/main/res/drawable/ic_baseline_library_books_24.xml" value="0.1825" />
         <entry key="..\:/mobile/MobileProject/app/src/main/res/drawable/ic_baseline_lock_24.xml" value="0.106" />
+        <entry key="..\:/mobile/MobileProject/app/src/main/res/drawable/ic_baseline_monetization_on_24.xml" value="0.1825" />
         <entry key="..\:/mobile/MobileProject/app/src/main/res/drawable/ic_baseline_perm_identity_24.xml" value="0.106" />
         <entry key="..\:/mobile/MobileProject/app/src/main/res/drawable/ic_baseline_power_settings_new_24.xml" value="0.171" />
         <entry key="..\:/mobile/MobileProject/app/src/main/res/drawable/ic_launcher_background.xml" value="0.106" />
         <entry key="..\:/mobile/MobileProject/app/src/main/res/layout/activity_add_so_giao_dich.xml" value="0.17552083333333332" />
         <entry key="..\:/mobile/MobileProject/app/src/main/res/layout/activity_home.xml" value="0.16145833333333334" />
+        <entry key="..\:/mobile/MobileProject/app/src/main/res/layout/activity_list_nhap_chi.xml" value="0.16145833333333334" />
+        <entry key="..\:/mobile/MobileProject/app/src/main/res/layout/activity_list_nhap_thu.xml" value="0.17552083333333332" />
         <entry key="..\:/mobile/MobileProject/app/src/main/res/layout/activity_main.xml" value="0.17552083333333332" />
+        <entry key="..\:/mobile/MobileProject/app/src/main/res/layout/activity_nhap_chi.xml" value="0.17552083333333332" />
+        <entry key="..\:/mobile/MobileProject/app/src/main/res/layout/activity_nhap_thu.xml" value="0.16145833333333334" />
+        <entry key="..\:/mobile/MobileProject/app/src/main/res/layout/activity_nhapchi_chitiet.xml" value="0.17552083333333332" />
+        <entry key="..\:/mobile/MobileProject/app/src/main/res/layout/activity_nhapthu_chitiet.xml" value="0.17552083333333332" />
         <entry key="..\:/mobile/MobileProject/app/src/main/res/layout/activity_register.xml" value="0.17552083333333332" />
-        <entry key="..\:/mobile/MobileProject/app/src/main/res/layout/fragment_nhapchi.xml" value="0.17552083333333332" />
+        <entry key="..\:/mobile/MobileProject/app/src/main/res/layout/fragment_nhapchi.xml" value="0.1" />
+        <entry key="..\:/mobile/MobileProject/app/src/main/res/layout/fragment_nhapthu.xml" value="0.17552083333333332" />
         <entry key="..\:/mobile/MobileProject/app/src/main/res/layout/fragment_sogiaodich.xml" value="0.17552083333333332" />
         <entry key="..\:/mobile/MobileProject/app/src/main/res/layout/fragment_sono.xml" value="0.17552083333333332" />
         <entry key="..\:/mobile/MobileProject/app/src/main/res/layout/fragment_thongke.xml" value="0.17552083333333332" />
@@ -38,6 +48,7 @@
         <entry key="..\:/mobile/MobileProject/app/src/main/res/layout/fragment_tietkiem.xml" value="0.17552083333333332" />
         <entry key="..\:/mobile/MobileProject/app/src/main/res/layout/layout_header_nav.xml" value="0.17552083333333332" />
         <entry key="..\:/mobile/MobileProject/app/src/main/res/menu/menu_nav.xml" value="0.17552083333333332" />
+        <entry key="..\:/mobile/MobileProject/app/src/main/res/menu/menu_thuchi.xml" value="0.17552083333333332" />
       </map>
     </option>
   </component>
